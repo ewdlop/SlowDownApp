@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlowDown - Mindfulness & Break Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SlowDown</h1>
+            <p class="subtitle">Take a moment to breathe and be present</p>
+        </header>
+
+        <main>
+            <!-- Break Timer Section -->
+            <section class="timer-section">
+                <h2>Break Timer</h2>
+                <div class="timer-display">
+                    <span id="timer-minutes">05</span>:<span id="timer-seconds">00</span>
+                </div>
+                
+                <div class="timer-controls">
+                    <div class="duration-buttons">
+                        <button class="duration-btn active" data-minutes="5">5 min</button>
+                        <button class="duration-btn" data-minutes="10">10 min</button>
+                        <button class="duration-btn" data-minutes="15">15 min</button>
+                        <button class="duration-btn" data-minutes="20">20 min</button>
+                    </div>
+                    
+                    <div class="control-buttons">
+                        <button id="start-btn" class="control-btn primary">Start</button>
+                        <button id="pause-btn" class="control-btn" disabled>Pause</button>
+                        <button id="reset-btn" class="control-btn">Reset</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Breathing Exercise Section -->
+            <section class="breathing-section">
+                <h2>Breathing Exercise</h2>
+                <div class="breathing-container">
+                    <div class="breathing-circle" id="breathing-circle">
+                        <span class="breathing-text" id="breathing-text">Breathe</span>
+                    </div>
+                    <button id="breathing-btn" class="control-btn primary">Start Breathing</button>
+                </div>
+            </section>
+
+            <!-- Mindfulness Quotes Section -->
+            <section class="quotes-section">
+                <h2>Mindful Moment</h2>
+                <div class="quote-container">
+                    <p class="quote" id="quote-text">Click below for a mindful reminder</p>
+                    <button id="new-quote-btn" class="control-btn">New Quote</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
